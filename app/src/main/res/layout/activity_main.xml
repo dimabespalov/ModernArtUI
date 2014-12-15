@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	
+    
+    <SeekBar
+        android:id="@+id/seekBarBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+    
+    <View
+        android:id="@+id/anchor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+    
+    <LinearLayout
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/anchor"
+        android:layout_above="@id/seekBarBottom"
+        android:orientation="vertical" >
+        
+        <View
+            android:id="@+id/left_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E80903"
+            android:layout_margin="5dp" />
+        <View
+            android:id="@+id/left_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFCC00"
+            android:layout_margin="5dp" />
+	</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/anchor"
+        android:layout_above="@id/seekBarBottom"
+        android:orientation="vertical" >
+		<View
+		    android:id="@+id/right_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0CE853" 
+            android:layout_margin="5dp"/>
+        <View
+            android:id="@+id/right_middle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#B2B2B2" 
+            android:layout_margin="5dp"/>
+        <View
+            android:id="@+id/right_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0D19FF" 
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+    
+    
+</RelativeLayout> 
